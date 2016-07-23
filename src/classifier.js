@@ -30,4 +30,8 @@ export default class Classifier {
 
     return res ? res.label : null;
   }
+
+  export() {
+    return this.brain.toJSON();
+  }
 }
